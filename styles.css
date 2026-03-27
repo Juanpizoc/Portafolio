@@ -1,0 +1,74 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0d0d;
+  color: white;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #111;
+}
+
+nav span {
+  color: #8b5cf6;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+/* EXPERIENCIA */
+.timeline {
+  border-left: 2px solid #8b5cf6;
+  margin: 40px;
+  padding-left: 20px;
+}
+
+.card {
+  background: #1a1a1a;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.date {
+  color: #8b5cf6;
+}
+
+.tags span {
+  background: #333;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+/* PROYECTOS */
+.projects {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.project {
+  background: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  flex: 1;
+}
