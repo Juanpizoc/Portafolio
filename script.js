@@ -1,27 +1,29 @@
-<script>
-  const track = document.querySelector('.carousel-track');
-  const next = document.querySelector('.next');
-  const prev = document.querySelector('.prev');
+if (!track || !next || !prev) {
+  console.log("Error: elementos del carrusel no encontrados");
+}
 
-  let index = 0;
+const track = document.querySelector('.carousel-track');
+const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
 
-  next.addEventListener('click', () => {
-    index++;
-    updateCarousel();
-  });
+let index = 0;
 
-  prev.addEventListener('click', () => {
-    index--;
-    updateCarousel();
-  });
+next.addEventListener('click', () => {
+  index++;
+  updateCarousel();
+});
 
-  function updateCarousel() {
-    const cards = document.querySelectorAll('.project-card');
-    const width = 320;
+prev.addEventListener('click', () => {
+  index--;
+  updateCarousel();
+});
 
-    if (index < 0) index = 0;
-    if (index >= cards.length) index = cards.length - 1;
+function updateCarousel() {
+  const cards = document.querySelectorAll('.project-card');
+  const width = 320;
 
-    track.style.transform = `translateX(-${index * width}px)`;
-  }
-</script>
+  if (index < 0) index = 0;
+  if (index >= cards.length) index = cards.length - 1;
+
+  track.style.transform = `translateX(-${index * width}px)`;
+}
