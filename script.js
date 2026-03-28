@@ -1,7 +1,3 @@
-if (!track || !next || !prev) {
-  console.log("Error: elementos del carrusel no encontrados");
-}
-
 document.addEventListener("DOMContentLoaded", () => {
 
   const track = document.querySelector('.carousel-track');
