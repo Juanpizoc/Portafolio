@@ -12,7 +12,7 @@
     <h2>Juan <span>Pizo</span></h2>
     <ul>
       <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#experiencia">Experiencia</a></li>
+      <li><a href="#sobremi">sobre mi</a></li>
       <li><a href="#proyectos">Proyectos</a></li>
     </ul>
   </nav>
@@ -24,7 +24,7 @@
   </section>
 
   <!-- EXPERIENCIA -->
-  <section id="experiencia">
+  <section id="sobremi">
     <h2>Experiencia</h2>
 
     <div class="timeline">
@@ -54,24 +54,42 @@
     </div>
   </section>
 
-  <!-- PROYECTOS -->
   <section id="proyectos">
-    <h2>Proyectos</h2>
+  <h2>Proyectos</h2>
 
-    <div class="projects">
-      <div class="project">
+  <div class="carousel">
+
+    <button class="prev">&#10094;</button>
+
+    <div class="carousel-track">
+
+      <!-- PROYECTO 1 -->
+      <div class="project-card">
+        <img src="img/Code.png" alt="Proyecto 1">
         <h3>CRUD Sistema Bancario</h3>
-        <p>Aplicación con Spring Boot</p>
-        <a href="#">Ver proyecto</a>
+        <p>Spring Boot + MySQL</p>
+        <a href="https://github.com/Juanpizoc/Crud_Sistema_Bancario" target="_blank">Ver código</a>
       </div>
 
-      <div class="project">
+      <!-- PROYECTO 2 -->
+      <div class="project-card">
+        <img src="img/proyecto2.jpg" alt="Proyecto 2">
         <h3>Portafolio Web</h3>
-        <p>Hecho con HTML, CSS y JS</p>
-        <a href="#">Ver proyecto</a>
+        <p>HTML, CSS, JS</p>
+        <a href="https://github.com/tuusuario/portafolio" target="_blank">Ver código</a>
       </div>
-    </div>
-  </section>
 
-</body>
-</html>
+      <!-- PROYECTO 3 -->
+      <div class="project-card">
+        <img src="img/proyecto3.jpg" alt="Proyecto 3">
+        <h3>API REST</h3>
+        <p>Java + Spring Boot</p>
+        <a href="https://github.com/tuusuario/api" target="_blank">Ver código</a>
+      </div>
+
+    </div>
+
+    <button class="next">&#10095;</button>
+
+  </div>
+</section>

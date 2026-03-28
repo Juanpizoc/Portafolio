@@ -59,16 +59,69 @@ nav a {
   margin-right: 5px;
 }
 
-/* PROYECTOS */
-.projects {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
+#proyectos {
+  padding: 50px 20px;
+  text-align: center;
 }
 
-.project {
-  background: #1a1a1a;
-  padding: 20px;
-  border-radius: 10px;
-  flex: 1;
+/* CONTENEDOR */
+.carousel {
+  position: relative;
+  overflow: hidden;
+  max-width: 900px;
+  margin: auto;
 }
+
+/* TRACK */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+/* CARD */
+.project-card {
+  min-width: 300px;
+  margin: 20px;
+  background: #1a1a1a;
+  border-radius: 15px;
+  padding: 15px;
+  transition: transform 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+/* IMAGEN */
+.project-card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* BOTON */
+.project-card a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 15px;
+  background: #8b5cf6;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* FLECHAS */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #8b5cf6;
+  border: none;
+  color: white;
+  font-size: 25px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
