@@ -125,3 +125,13 @@ nav a {
 
 .prev { left: 10px; }
 .next { right: 10px; }
+
+.carousel {
+  overflow: hidden;
+  width: 100%;
+}
+
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease;
+}

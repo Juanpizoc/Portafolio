@@ -16,7 +16,12 @@
   });
 
   function updateCarousel() {
-    const width = 320; // tamaño card
+    const cards = document.querySelectorAll('.project-card');
+    const width = 320;
+
+    if (index < 0) index = 0;
+    if (index >= cards.length) index = cards.length - 1;
+
     track.style.transform = `translateX(-${index * width}px)`;
   }
 </script>
